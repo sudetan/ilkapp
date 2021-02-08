@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@expo/metro-config": "^0.1.52",
+    "@expo/vector-icons": "^12.0.0",
     "@react-navigation/drawer": "^5.12.3",
     "@relateddigital/visilabs-react-native": "^1.0.28",
     "expo": "~40.0.0",

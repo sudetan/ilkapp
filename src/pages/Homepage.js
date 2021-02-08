@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Image } from 'react-native'
+import { Text, View, StyleSheet, Image, ActionSheetIOS } from 'react-native'
 import Swiper from 'react-native-swiper'
+import { FontAwesome } from '@expo/vector-icons';
+import { Actions } from 'react-native-router-flux';
+
 
 
 export default class Homepage extends Component {
   render() {
     return (
       <View style={styles.container}>
+                    <FontAwesome name={'ellipsis-v'}
+            size={45}
+            color={'red'}
+            style={styles.drawerIcon}
+            onPress={()=>{
+              Actions.drawerToggle()
+            }}
+
+            />
+
         <View style={styles.header}>
           <View style={styles.shadow}>
 
@@ -17,6 +30,8 @@ export default class Homepage extends Component {
               style={styles.image}
             ></Image>         
             <Text style={styles.entryText}>Hello,Sude!</Text>
+
+
 
           </View>
      
@@ -30,6 +45,7 @@ export default class Homepage extends Component {
           <Swiper style={styles.wrapper} showsButtons={true}>
             <View style={styles.slide1}>
               <Text style={styles.text}>Öne Çıkanlar</Text>
+              
             </View>
             <View style={styles.slide2}>
               <Text style={styles.text}></Text>
@@ -70,6 +86,13 @@ const styles = StyleSheet.create({
 
 
 
+
+  },
+  drawerIcon:{
+    position:'absolute',
+    top:100,
+    right:25
+    
 
   },
   shadow: {
