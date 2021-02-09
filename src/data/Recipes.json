@@ -1,6 +1,7 @@
-export const data=[
+[
     {
         id:1,
+        category:'soup',
         title:'Mercimek Çorbası',
         image:'',
         recipe:'',
@@ -19,6 +20,7 @@ export const data=[
     },
     {
         id:2,
+        category:'dessert',
         title:'Cheesecake',
         image:'',
         recipe:'',
@@ -34,5 +36,62 @@ export const data=[
             }
         ],
         rate:'5'
-    }
+    },
+    {
+        id:3,
+        category:'dessert',
+        title:'Sütlaç',
+        image:'',
+        recipe:'',
+        ingredients:[
+            {
+                ingredient:'krema'
+            },
+            {
+                ingredient:'süt'
+            },
+            {
+                ingredient:'şeker'
+            }
+        ],
+        rate:'5'
+    },
+    {
+        id:4,
+        category:'dessert',
+        title:'Güllaç',
+        image:'',
+        recipe:'',
+        ingredients:[
+            {
+                ingredient:'krema'
+            },
+            {
+                ingredient:'süt'
+            },
+            {
+                ingredient:'şeker'
+            }
+        ],
+        rate:'5'
+    },
+    {
+        id:5,
+        category:'soup',
+        title:'Domates Çorbası',
+        image:'',
+        recipe:'',
+        ingredients:[
+            {
+                ingredient:'mercimek'
+            },
+            {
+                ingredient:'su'
+            },
+            {
+                ingredient:'tuz'
+            }
+        ],
+        rate:'4.5'
+    },
 ]
