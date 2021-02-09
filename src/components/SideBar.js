@@ -11,16 +11,14 @@ export default class SideBar extends Component {
        <View>
            <View style = {styles.container}>
                 <View style = {styles.textView}>
-                   <TouchableOpacity onPress={() => Actions.main()}><Text style = {styles.title}> Home </Text></TouchableOpacity> 
+                   <TouchableOpacity onPress={() => Actions.main()}><Text style = {styles.title}> Ana Sayfa </Text></TouchableOpacity> 
                 </View>
                 <View style = {styles.textView}>
-                   <TouchableOpacity onPress={() => Actions.page2()}><Text style = {styles.title}> Page 2 </Text></TouchableOpacity> 
+                   <TouchableOpacity onPress={() => Actions.page2()}><Text style = {styles.title}> Kaydedilenler </Text></TouchableOpacity> 
                 </View>
+                
                 <View style = {styles.textView}>
-                   <TouchableOpacity onPress={() => Actions.page3()}><Text style = {styles.title}> Page 3 </Text></TouchableOpacity> 
-                </View>
-                <View style = {styles.textView}>
-                    <TouchableOpacity onPress={() => Actions.drawerClose()}><Text style = {styles.title}> Back </Text></TouchableOpacity> 
+                    <TouchableOpacity onPress={() => Actions.drawerClose()}><Text style = {styles.title}> Geri </Text></TouchableOpacity> 
                 </View>
             </View>
        </View>       
@@ -32,13 +30,15 @@ let styles = StyleSheet.create({
     container: {
         flexDirection: 'column',
         flex:1,
+        top:72
      },
      textView:{
-        height: 30,
+        height: 50,
         width:'100%',
         alignItems: 'center',
      },
      title:{
-      fontSize:18
+      fontSize:20,
+      color:'#2C143D'
      },     
 });
