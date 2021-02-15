@@ -3,7 +3,8 @@ import { Text, View, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-swiper'
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Actions } from 'react-native-router-flux';
-
+// asdfgasga
+// asfdggsagd
 
 export default class Homepage extends Component {
   render() {
@@ -18,18 +19,20 @@ export default class Homepage extends Component {
           }}
         />
         <View style={styles.header}>
-          <View style={styles.shadow}>
+          <View style={styles.logoContainer}>
             <View style={styles.newview}>
-            <Image
-              source={require('../../assets/logo.png')}
-              resizeMode="contain"
-              style={styles.logo}
-            ></Image>
-            <Image
-              source={require('../../assets/isim.png')}
-              resizeMode="contain"
-              style={styles.logo}
-            ></Image>
+              <View style={styles.shadow}>
+                <Image
+                  source={require('../../assets/logo.png')}
+                  resizeMode="contain"
+                  style={styles.logo}
+                ></Image>
+              </View>
+              <Image
+                source={require('../../assets/isim.png')}
+                resizeMode="contain"
+                style={[styles.logo, { marginTop: -15, }]}
+              ></Image>
             </View>
             <Text style={styles.entryText}>Hello,Sude!</Text>
           </View>
@@ -98,8 +101,12 @@ const styles = StyleSheet.create({
     shadowRadius: 8.30,
     borderRadius: 45,
     elevation: 20,
-    width: 100,
-    height: 100,
+    borderWidth:5,
+    borderColor:'#fff',
+  },
+  logoContainer: {
+    width: 70,
+    height: 70,
     backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'center',
@@ -108,10 +115,9 @@ const styles = StyleSheet.create({
 
   },
   logo: {
-    width: 100,
-    height: 100,
-    borderRadius: 25,
-
+    width: 70,
+    height: 70,
+    borderRadius: 50,
   },
   text: {
     color: "white",
@@ -130,11 +136,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
     color: 'rgba(0,0,0,0.4)',
-    left: 65
+    left: 65,
+    width:100
   },
   baseText: {
     fontWeight: 'bold',
-    top: 15,
+    top: 35,
     fontSize: 30
   },
   innerText: {
@@ -158,8 +165,7 @@ const styles = StyleSheet.create({
     height: 250,
     backgroundColor: '#92BBD9'
   },
-  newview:{
-    backgroundColor:'red',
-    height:100,
+  newview: {
+    alignItems:'center',
   }
 })
