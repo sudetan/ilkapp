@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View,StyleSheet, FlatList, ActivityIndicator, TouchableOpacity } from 'react-native'
 import { Actions } from 'react-native-router-flux'
-import recipesData from '../data/Recipes.json'
+import recipesData from '../data/Recipes'
 
 export default class Categories extends Component {
     constructor(props) {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       padding: 25,
-      paddingTop: 75
+      paddingTop: 75,
     },
     title:{
         fontSize:30

@@ -9,21 +9,12 @@ export default class SideBar extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.textView}>
-                    <TouchableOpacity onPress={() => Actions.Homepage()}><Text style={styles.title}> Ana Sayfa </Text></TouchableOpacity>
-                </View>
 
-                <View style={styles.textView}>
-                    <TouchableOpacity onPress={() => Actions.drawerClose()}><Text style={styles.title}> Kapat </Text></TouchableOpacity>
-                </View>
 
-                <View style={styles.textView}>
-                    <TouchableOpacity onPress={() => Actions.pop()}><Text style={styles.title}> Geri </Text></TouchableOpacity>
-                </View>
 
                 <View style={{ width: "100%", height: .5, backgroundColor: 'gray' }} />
 
-                <View style={[{ marginTop:15, paddingLeft: 30 }]}>
+                <View style={[{ marginTop: 15, paddingLeft: 30 }]}>
                     <View>
                         <TouchableOpacity
                             onPress={() => {
@@ -45,7 +36,7 @@ export default class SideBar extends Component {
                         </TouchableOpacity>
                     </View>
                     <View>
-                    <TouchableOpacity
+                        <TouchableOpacity
                             onPress={() => {
                                 Actions.Categories({ category: "dessert" });
                             }}>
@@ -100,6 +91,6 @@ const styles = StyleSheet.create({
     item: {
         fontSize: 18,
         color: 'gray',
-        paddingLeft:15
+        paddingLeft: 15
     }
 });

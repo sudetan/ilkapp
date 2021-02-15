@@ -1,22 +1,38 @@
-[
+const Recipes=[
     {
         id:1,
         category:'soup',
-        title:'Mercimek Çorbası',
-        image:'',
-        recipe:'',
+        title:'Yeşil Mercimek Çorbası',
+        image:require('../../assets/onecikan2.jpg'),
+        recipe:'s',
+    
         ingredients:[
             {
-                ingredient:'mercimek'
+                ingredient:'1 su bardağı yeşil mercimek'
             },
             {
-                ingredient:'su'
+                ingredient:'1 ça erişte'
             },
             {
-                ingredient:'tuz'
-            }
+                ingredient:'2 adet orta boy kuru soğan'
+            },
+            {
+                ingredient:'1 diş sarımsak'
+            },
+            {
+                ingredient:'1 yemek kaşığı tereyağı'
+            },
+            {
+                ingredient:'1 yemek kaşığı domates salçası'
+            },
+            {
+                ingredient:'1 tatlı kaşığı biber salçası'
+            },
+            {
+                ingredient:''
+            },
         ],
-        rate:'4.5'
+        rate:'4.6'
     },
     {
         id:2,
@@ -95,3 +111,4 @@
         rate:'4.5'
     },
 ]
+export default Recipes

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-swiper'
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 import { Actions } from 'react-native-router-flux';
 
 
@@ -9,7 +9,7 @@ export default class Homepage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <FontAwesome name={'ellipsis-v'}
+        <FontAwesome5 name={'ellipsis-v'}
           size={45}
           color={'#7225A8'}
           style={styles.drawerIcon}
@@ -19,11 +19,18 @@ export default class Homepage extends Component {
         />
         <View style={styles.header}>
           <View style={styles.shadow}>
+            <View style={styles.newview}>
             <Image
-              source={require('../../assets/anasayfa.png')}
+              source={require('../../assets/logo.png')}
               resizeMode="contain"
               style={styles.logo}
             ></Image>
+            <Image
+              source={require('../../assets/isim.png')}
+              resizeMode="contain"
+              style={styles.logo}
+            ></Image>
+            </View>
             <Text style={styles.entryText}>Hello,Sude!</Text>
           </View>
           <Text style={styles.baseText}>Welcome to the food
@@ -42,7 +49,7 @@ export default class Homepage extends Component {
             <View style={styles.slide2}>
               <Text style={styles.text}>Öne Çıkanlar</Text>
               <Image
-                source={require('../../assets/onecikan1.jpg')}
+                source={require('../../assets/onecikan8.jpg')}
                 style={styles.image}
               />
             </View>
@@ -104,6 +111,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius: 25,
+
   },
   text: {
     color: "white",
@@ -150,4 +158,8 @@ const styles = StyleSheet.create({
     height: 250,
     backgroundColor: '#92BBD9'
   },
+  newview:{
+    backgroundColor:'red',
+    height:100,
+  }
 })
