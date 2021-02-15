@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-swiper'
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Actions } from 'react-native-router-flux';
-
+//
 
 export default class Homepage extends Component {
   render() {
