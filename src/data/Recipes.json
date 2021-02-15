@@ -1,0 +1,38 @@
+export const data=[
+    {
+        id:1,
+        title:'Mercimek Çorbası',
+        image:'',
+        recipe:'',
+        ingredients:[
+            {
+                ingredient:'mercimek'
+            },
+            {
+                ingredient:'su'
+            },
+            {
+                ingredient:'tuz'
+            }
+        ],
+        rate:'4.5'
+    },
+    {
+        id:2,
+        title:'Cheesecake',
+        image:'',
+        recipe:'',
+        ingredients:[
+            {
+                ingredient:'krema'
+            },
+            {
+                ingredient:'süt'
+            },
+            {
+                ingredient:'şeker'
+            }
+        ],
+        rate:'5'
+    }
+]
