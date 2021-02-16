@@ -43,6 +43,13 @@ export default class Detail extends Component {
                     <View style={{ backgroundColor: '', flex: 1, width: '100%' }}>
                         <Image style={styles.image} source={this.state.recipe.image} />
                         <Text style={styles.ratetext}>Puan : {this.state.recipe.rate} </Text>
+
+
+                        <Text style={styles.kutustyle} >
+
+                        </Text>
+
+
                         <Rating
                             type='star'
                             ratingCount={5}
@@ -51,7 +58,7 @@ export default class Detail extends Component {
                             readonly
                             ratingColor={'red'}
                             style={styles.star1}
-                            
+
                         />
                         <Text style={styles.titletext}> {this.state.recipe.title}</Text>
                         <ScrollView style={styles.scrollview}>
@@ -61,10 +68,7 @@ export default class Detail extends Component {
 
                             <Text style={styles.recipetext}>  {this.state.recipe.recipe}</Text>
 
-
-
-
-                        </ScrollView>
+</ScrollView>
                     </View> :
 
                     <ActivityIndicator color={'black'} />
@@ -89,8 +93,8 @@ const styles = StyleSheet.create({
         borderWidth: 15,
         borderRadius: 12,
         top: 48,
-        marginBottom: 30,
-        marginTop:10
+        marginBottom: 10,
+        marginTop: 10
     },
     sude: {
         fontSize: 17,
@@ -111,23 +115,28 @@ const styles = StyleSheet.create({
         color: '#94421B',
         fontWeight: 'bold',
         fontSize: 25,
+        bottom: 100,
+        height: 30
 
 
     },
     recipetext: {
         fontSize: 17,
-        left:7,
+        left: 7,
         bottom: 30,
-        zIndex:999,
-        marginTop:25
-        
+        zIndex: 999,
+        marginTop: 25
+
 
     },
     malzemelertext: {
         color: '#094270',
         fontWeight: 'bold',
         fontSize: 19,
-        left: 10
+        left: 10,
+        bottom: 10,
+        height: 25,
+        zIndex: 99999
 
     },
     scrollview: {
@@ -139,10 +148,21 @@ const styles = StyleSheet.create({
 
     },
     star1: {
-        
-        left:110,
-        bottom: 140,
-    
+
+        left: 110,
+        bottom: 230
+
+
+
+    },
+    kutustyle: {
+        width: 130,
+        height: 100,
+        borderRadius: 20,
+        borderWidth: 4,
+        borderColor: '#757D03',
+        left: 238,
+        bottom: 195
 
 
     }
