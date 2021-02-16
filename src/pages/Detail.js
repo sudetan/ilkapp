@@ -45,9 +45,7 @@ export default class Detail extends Component {
                         <Text style={styles.ratetext}>Puan : {this.state.recipe.rate} </Text>
 
 
-                        <Text style={styles.kutustyle} >
-
-                        </Text>
+                        <Text style={styles.kutustyle} ></Text>
 
 
                         <Rating
@@ -116,7 +114,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 25,
         bottom: 100,
-        height: 30
 
 
     },
@@ -158,8 +155,8 @@ const styles = StyleSheet.create({
     kutustyle: {
         width: 130,
         height: 100,
-        borderRadius: 20,
-        borderWidth: 4,
+        borderRadius: 25,
+        borderWidth: 3,
         borderColor: '#757D03',
         left: 238,
         bottom: 195
