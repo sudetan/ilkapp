@@ -42,44 +42,35 @@ export default class Detail extends Component {
                 {this.state.recipe ?
                     <View style={{ backgroundColor: '', flex: 1, width: '100%' }}>
                         <Image style={styles.image} source={this.state.recipe.image} />
-                        <Text style={styles.ratetext}>Puan : {this.state.recipe.rate} </Text>
 
 
-                        <Text style={styles.kutustyle} >
+                        <View style={styles.kutustyle} >
+                            <Text style={styles.ratetext}>Puan : {this.state.recipe.rate} </Text>
+                            <Rating
+                                type='star'
+                                ratingCount={5}
+                                imageSize={20}
+                                startingValue={parseFloat(this.state.recipe.rate)}
+                                readonly
+                                ratingColor={'red'}
+                                style={styles.star1}
 
-                        </Text>
-
-
-                        <Rating
-                            type='star'
-                            ratingCount={5}
-                            imageSize={20}
-                            startingValue={parseFloat(this.state.recipe.rate)}
-                            readonly
-                            ratingColor={'red'}
-                            style={styles.star1}
-
-                        />
-                        <Text style={styles.titletext}> {this.state.recipe.title}</Text>
-                        <ScrollView style={styles.scrollview}>
-                            <Text style={styles.malzemelertext}> Malzemeler : </Text>
-                            {this.state.recipe.ingredients ? this.ingredients(this.state.recipe.ingredients) : <ActivityIndicator color={'black'} />}
-                            <Text style={styles.malzemelertext}> Tarif : </Text>
-
-                            <Text style={styles.recipetext}>  {this.state.recipe.recipe}</Text>
-
-</ScrollView>
-                    </View> :
-
-                    <ActivityIndicator color={'black'} />
+                            />
+                        </View>
 
 
 
-
-
+                        <View style={{flex:1}}>
+                            <Text style={styles.titletext}> {this.state.recipe.title}</Text>
+                            <ScrollView style={styles.scrollview}>
+                                <Text style={styles.malzemelertext}> Malzemeler : </Text>
+                                {this.state.recipe.ingredients ? this.ingredients(this.state.recipe.ingredients) : <ActivityIndicator color={'black'} />}
+                                <Text style={styles.malzemelertext}> Tarif : </Text>
+                                <Text style={styles.recipetext}>  {this.state.recipe.recipe}</Text>
+                            </ScrollView>
+                        </View>
+                    </View> : <ActivityIndicator color={'black'} />
                 }
-
-
             </View>
         )
     }
@@ -100,24 +91,18 @@ const styles = StyleSheet.create({
         fontSize: 17,
         color: '#453235',
         left: 15,
-
-
-
     },
     ratetext: {
         color: '#E0B707',
         fontWeight: 'bold',
         fontSize: 25,
-        left: 245,
-        bottom: 150
     },
     titletext: {
         color: '#94421B',
         fontWeight: 'bold',
         fontSize: 25,
-        bottom: 100,
-        height: 30
-
+        marginTop: -40,
+        bottom:5,
 
     },
     recipetext: {
@@ -134,26 +119,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 19,
         left: 10,
-        bottom: 10,
-        height: 25,
         zIndex: 99999
 
     },
     scrollview: {
         width: '100%',
-
-        flex: 1,
-
-
-
     },
     star1: {
-
-        left: 110,
-        bottom: 230
-
-
-
+        // top: 50,
     },
     kutustyle: {
         width: 130,
@@ -162,9 +135,10 @@ const styles = StyleSheet.create({
         borderWidth: 4,
         borderColor: '#757D03',
         left: 238,
-        bottom: 195
-
-
+        bottom: 195,
+        padding: 4,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 
 })
