@@ -42,40 +42,6 @@ export default class Detail extends Component {
                 {this.state.recipe ?
                     <View style={{ backgroundColor: '', flex: 1, width: '100%' }}>
                         <Image style={styles.image} source={this.state.recipe.image} />
-<<<<<<< HEAD
-                        <Text style={styles.ratetext}>Puan : {this.state.recipe.rate} </Text>
-
-
-                        <Text style={styles.kutustyle} ></Text>
-
-
-                        <Rating
-                            type='star'
-                            ratingCount={5}
-                            imageSize={20}
-                            startingValue={parseFloat(this.state.recipe.rate)}
-                            readonly
-                            ratingColor={'red'}
-                            style={styles.star1}
-
-                        />
-                        <Text style={styles.titletext}> {this.state.recipe.title}</Text>
-                        <ScrollView style={styles.scrollview}>
-                            <Text style={styles.malzemelertext}> Malzemeler : </Text>
-                            {this.state.recipe.ingredients ? this.ingredients(this.state.recipe.ingredients) : <ActivityIndicator color={'black'} />}
-                            <Text style={styles.malzemelertext}> Tarif : </Text>
-
-                            <Text style={styles.recipetext}>  {this.state.recipe.recipe}</Text>
-
-</ScrollView>
-                    </View> :
-
-                    <ActivityIndicator color={'black'} />
-
-
-
-=======
->>>>>>> cf61bb1bdb4d34b3e11d2ab3ee6beb2c414058f3
 
 
                         <View style={styles.kutustyle} >
@@ -100,7 +66,7 @@ export default class Detail extends Component {
                                 <Text style={styles.malzemelertext}> Malzemeler : </Text>
                                 {this.state.recipe.ingredients ? this.ingredients(this.state.recipe.ingredients) : <ActivityIndicator color={'black'} />}
                                 <Text style={styles.malzemelertext}> Tarif : </Text>
-                                <Text style={styles.recipetext}>  {this.state.recipe.recipe}</Text>
+                                <Text style={styles.recipetext}>{this.state.recipe.recipe}</Text>
                             </ScrollView>
                         </View>
                     </View> : <ActivityIndicator color={'black'} />
@@ -113,10 +79,9 @@ const styles = StyleSheet.create({
     image: {
         resizeMode: 'contain',
         width: 200,
-        height: 300,
+        height: 280,
         left: 10,
-        borderWidth: 15,
-        borderRadius: 12,
+        borderRadius: 20,
         top: 48,
         marginBottom: 10,
         marginTop: 10
@@ -135,21 +100,17 @@ const styles = StyleSheet.create({
         color: '#94421B',
         fontWeight: 'bold',
         fontSize: 25,
-<<<<<<< HEAD
-        bottom: 100,
-
-=======
         marginTop: -40,
-        bottom:5,
->>>>>>> cf61bb1bdb4d34b3e11d2ab3ee6beb2c414058f3
 
     },
     recipetext: {
         fontSize: 17,
-        left: 7,
         bottom: 30,
         zIndex: 999,
-        marginTop: 25
+        marginTop: 35,
+        flexShrink:1,
+        paddingHorizontal:15
+        
 
 
     },
@@ -158,7 +119,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 19,
         left: 10,
-        zIndex: 99999
+        zIndex: 99999,
+        marginTop:10
+        
 
     },
     scrollview: {

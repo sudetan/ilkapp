@@ -34,7 +34,7 @@ export default class Homepage extends Component {
                 style={[styles.logo, { marginTop: -15, }]}
               ></Image>
             </View>
-            <Text style={styles.entryText}>Hello,Sude!</Text>
+            <Text style={styles.entryText}>Hoşgeldin,Sude!</Text>
           </View>
           <Text style={styles.baseText}>Welcome to the food
             <Text style={styles.innerText}> paradise</Text>
@@ -79,7 +79,9 @@ const styles = StyleSheet.create({
   },
   swiperContainer: {
     height: 290,
-    top: 75
+    top: 150,
+    borderRadius:70
+    
   },
   image: {
     resizeMode: 'cover',
@@ -110,6 +112,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'center',
+    top:20
   },
   header: {
 
@@ -118,6 +121,7 @@ const styles = StyleSheet.create({
     width: 70,
     height: 70,
     borderRadius: 50,
+    
   },
   text: {
     color: "white",
@@ -137,11 +141,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'rgba(0,0,0,0.4)',
     left: 65,
-    width:100
+    width:200,
+    bottom:10
   },
   baseText: {
     fontWeight: 'bold',
-    top: 35,
+    top: 70,
     fontSize: 30
   },
   innerText: {
