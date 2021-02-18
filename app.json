@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "ilkapp",
-    "slug": "ilkapp",
-    "version": "1.0.0",
+    "name": "foodise",
+    "slug": "foodise",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1473D2"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,13 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sudetan.foodise",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.sudetan.foodise",
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"

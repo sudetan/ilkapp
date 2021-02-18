@@ -235,7 +235,7 @@ const Recipes=[
         rate:'4.4'
     },
     {
-        id:8,
+        id: 8,
         category:'salad',
         title:'Bal Kabaklı Siyah Mercimek   Salatası',
         recipe:'Mercimeği fazla dağıtmadan haşlayalım. Suyunu iyice süzdürelim ve soğuması için kenara alalım. Küçük küpler halinde kabağımızı doğrayalım. Yağını ,tuzunu ,karabiberini ilave edip karıştıralım. Pişirme kağıdı serili tepsiye dizelim. Önceden 200 derecede ısıttığımız fırında hafif karamalize olana kadar pişirelim. Mercimekle kabağı harmanlayalım. Nar ve dereotunu ekleyelim. Sos malzemelerini ayrı bir kapta iyice karıştıralım. Salatamıza ilave edelim. Son olarak dereotu ve nar ilave edelim. Afiyet olsun!',
